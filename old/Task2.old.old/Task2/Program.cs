@@ -6,10 +6,10 @@ namespace Task2
 	{
 		static void Main(string[] args)
 		{
-			robot a = new robot (25, "Die SNr ");
+			robot a = new robot ("Die SNr ", 25);
 			robot b = a;
 			Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
-			a.Updatesn (24);
+			a.Updatename ("Affe");
 			Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 		}
 
