@@ -7,7 +7,7 @@ namespace Task3
 			decimal seriennummer;
 			string name;
 
-			public robot(decimal dieSNr, string derName)
+			public Robot(decimal dieSNr, string derName)
 			{
 				if(string.IsNullOrWhiteSpace(derName))
 					throw new Exception("keine SerienNr.");

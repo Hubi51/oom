@@ -4,11 +4,28 @@ namespace Task3
 {
 	class Tank : IRobot
 	{
-		decimal seriennummer;
-		string name;
+		private decimal seriennummer;
+		private string name;
+		decimal Seriennummer { get; }
+		string Name { get; }
 
+        decimal IRobot.Seriennummer
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
 
-		public Tank (decimal dieSNr, string derName)
+        string IRobot.Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public Tank (decimal dieSNr, string derName)
 		{
 					if(string.IsNullOrWhiteSpace(derName))
 						throw new Exception("keine SerienNr.");
@@ -16,7 +33,7 @@ namespace Task3
 						throw new Exception("kein Name");
 
 					seriennummer = dieSNr;
-					//name = derName;
+					name = derName;
 					Updatesn(dieSNr);
 
 

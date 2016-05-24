@@ -8,7 +8,23 @@ namespace Task3
 		decimal seriennummer;
 		string name;
 
-		public Heal (decimal dieSNr, string derName)
+        public decimal Seriennummer
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public Heal (decimal dieSNr, string derName)
 		{
 	
 					if(string.IsNullOrWhiteSpace(derName))

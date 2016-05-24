@@ -5,10 +5,12 @@ namespace Task3
 	interface IRobot
 	{
 			
-			decimal seriennummer { get; }
-			string name { get; }
+		decimal Seriennummer { get; }
+			string Name { get; }
 
-
-	}
+         void Updatesn(decimal sn);
+        decimal Getseriennummer();
+        string Getname();
+    }
 }
 
