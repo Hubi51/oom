@@ -33,7 +33,7 @@ namespace Task3
 						throw new Exception("kein Name");
 
 					seriennummer = dieSNr;
-					//name = derName;
+					name = derName;
 					Updatesn(dieSNr);
 
 
@@ -43,7 +43,7 @@ namespace Task3
 					return seriennummer;
 				}
 
-				public string Getname() => name; //das selbe wie return name;
+				public string Getname() => name; 
 
 				public void Updatesn(decimal neuesn)
 				{

@@ -6,9 +6,9 @@ namespace Task3
 	{
 			
 		decimal Seriennummer { get; }
-			string Name { get; }
+		string Name { get; }
 
-         void Updatesn(decimal sn);
+        void Updatesn(decimal sn);
         decimal Getseriennummer();
         string Getname();
     }
