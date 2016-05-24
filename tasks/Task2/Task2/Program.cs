@@ -11,6 +11,7 @@ namespace Task2
 			Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 			a.Updatesn (24);
 			Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
+			a.Updatesn (23);
 		}
 
 	}
