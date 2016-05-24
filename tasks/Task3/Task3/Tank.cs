@@ -6,24 +6,24 @@ namespace Task3
 	{
 		private decimal seriennummer;
 		private string name;
-		decimal Seriennummer { get; }
-		string Name { get; }
+
 
         decimal IRobot.Seriennummer
         {
             get
             {
-                throw new NotImplementedException();
+				return seriennummer;
             }
+
+			set
+			{
+				Updatesn (value);
+			}
+
+
         }
 
-        string IRobot.Name
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+		string IRobot.Name => name;
 
         public Tank (decimal dieSNr, string derName)
 		{

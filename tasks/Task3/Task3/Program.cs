@@ -19,9 +19,10 @@ namespace Task3
 			{	
 				//robot b = a;
 				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
-				a.Updatesn (24);
+				a.Updatesn (24*a.Getseriennummer());
 				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 				a.Updatesn (23);
+				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 			}
 		
 		/*	catch (Exception ex)

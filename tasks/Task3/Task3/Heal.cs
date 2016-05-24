@@ -8,21 +8,22 @@ namespace Task3
 		decimal seriennummer;
 		string name;
 
-        public decimal Seriennummer
+         decimal IRobot.Seriennummer
         {
             get
             {
-                throw new NotImplementedException();
+				return seriennummer;
             }
+			set
+			{
+				if(value < 0)
+					throw new Exception("keine SerienNr.");
+				seriennummer = value;
+			}
+
         }
 
-        public string Name
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+		 string IRobot.Name => name;
 
         public Heal (decimal dieSNr, string derName)
 		{
