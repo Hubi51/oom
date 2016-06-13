@@ -47,7 +47,8 @@ namespace Task3
 
 				public void Updatesn(decimal neuesn)
 				{
-					if (neuesn < 0) throw new Exception ("Negativer Wert");
+
+			if (neuesn < 0) throw new Exception ("Negativer Wert");
 					seriennummer = neuesn;
 				}
 

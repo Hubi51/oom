@@ -17,7 +17,7 @@ namespace Task3
 
 			foreach (var a in robot) 
 			{	
-				//robot b = a;
+				
 				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 				a.Updatesn (24*a.Getseriennummer());
 				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");

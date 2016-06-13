@@ -5,8 +5,8 @@ namespace Task3
 	class Heal : IRobot
 	{	
 
-		decimal seriennummer;
-		string name;
+		private decimal seriennummer;
+		private string name;
 
          decimal IRobot.Seriennummer
         {
