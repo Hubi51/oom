@@ -24,8 +24,9 @@ namespace Task3
 				a.Updatesn (23);
 				Console.WriteLine ($"{a.Getseriennummer()},{a.Getname()}");
 			}
-		
-		/*	catch (Exception ex)
+            		
+			/*Wenn Fehler im Try passiert, springt er in den catch Zweig*/
+/*			catch (Exception ex)
 			{
 
 				Console.WriteLine($"ERROR: {ex}");
